@@ -1,2 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* Your CSS Code here. */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    max-width: 900px;
+    width: 100%;
+    padding: 40px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+thead {
+    background: #c9616b;
+}
+
+thead th {
+    color: white;
+    padding: 18px 15px;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid #b85560;
+}
+
+tbody tr {
+    transition: all 0.3s ease;
+}
+
+tbody tr:nth-child(odd) {
+    background: #e8b4b8;
+}
+
+tbody tr:nth-child(even) {
+    background: #f5d7d9;
+}
+
+tbody tr:hover {
+    opacity: 0.8;
+    transform: scale(1.01);
+}
+
+tbody td {
+    padding: 16px 15px;
+    text-align: center;
+    color: #333;
+    font-size: 1em;
+    border: 1px solid #d4999e;
+}
+
+tbody td:first-child {
+    font-weight: 700;
+    color: #333;
+    font-size: 1em;
+    background: #d89099;
+}
+
+.note {
+    margin-top: 30px;
+    padding: 20px;
+    background: #fff3cd;
+    border-left: 5px solid #ffc107;
+    border-radius: 8px;
+}
+
+.note p {
+    color: #856404;
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+.note strong {
+    color: #664d03;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 25px 15px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    thead th {
+        padding: 12px 8px;
+        font-size: 0.9em;
+    }
+    
+    tbody td {
+        padding: 12px 8px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+        letter-spacing: 1px;
+    }
+    
+    thead th {
+        padding: 10px 5px;
+        font-size: 0.75em;
+    }
+    
+    tbody td {
+        padding: 10px 5px;
+        font-size: 0.85em;
+    }
+}
